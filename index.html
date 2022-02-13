@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- carousel css -->
+    <link rel="stylesheet" href="./style/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/owl.carousel.min.css">
+    <title>LIL' FARM</title>
+    <link rel="icon" type="image/logo" href="images/logo2.png">
+</head>
+
+<body>
+
+
+    <header class="header">
+
+        <nav class="navbar navbar-expand-lg navbar-light custom_nav py-3 ">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="index.html">
+                    <img src="images/logo2.png" alt="LOGO" />
+                    <span class="text-white p-2 logo-font">LIL' FARM</span>
+                </a>
+                <button class="navbar-toggler toggle-btn" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse nav-list" id="navbarSupportedContent">
+                    <ul class="navbar-nav  ms-auto   nav-menu mb-2 mb-lg-0  ">
+                        <li class="nav-item">
+                            <a class="nav-link navbar-link" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  navbar-link" aria-current="page" href="#course">Courses</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link  navbar-link" aria-current="page" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  navbar-link" aria-current="page" href="#service">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  navbar-link" aria-current="page" href="#about">about us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  navbar-link" aria-current="page" href="#faculty">faculty</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  navbar-link" aria-current="page" href="#contact">Contact Us</a>
+                        </li>
+                        <li class="nav-item action-item">
+                            <a class="nav-link  navbar-link" aria-current="page" data-bs-toggle="modal"
+                                data-bs-target="#myModal1">Sign In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- modal 1 login -->
+
+        <section>
+            <div class="modal fade " id="myModal1">
+                <div class="modal-dialog modal-md">
+                    <div class="modal-content modal-design">
+
+                        <div class="modal-header text-center">
+                            <h4 class="modal-title w-100 ">Login Here</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <div class="container">
+                                <form class=" registration-form" style="margin-top: 10px;">
+                                    <div class="registration-input-container">
+                                        <i class="fa fa-user registration-icon"></i>
+                                        <input class="registration-input-field from-control" type="email"
+                                            placeholder="Email" name="usrnm">
+                                    </div>
+
+                                    <div class="registration-input-container">
+                                        <i class="fa fa-key registration-icon"></i>
+                                        <input class="registration-input-field form-control" type="password"
+                                            placeholder="password" name="pass">
+                                    </div>
+
+
+                                    <button type="submit" class="registration-btn">Register</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="submit" class="google-btn w-100 btn-outline-danger">Login With Google</button>
+                            <P class="modal-p-signup">New Here ? <a href="#" data-bs-toggle="modal"
+                                    data-bs-target="#myModal2">sign
+                                    up</a></P>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- modal 2 registration -->
+
+        <section>
+            <div class="modal fade" id="myModal2">
+                <div class="modal-dialog modal-md">
+                    <div class="modal-content modal-design">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header text-center">
+                            <h4 class="modal-title w-100">Register Here</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+
+                        <div class="modal-body">
+                            <div class="container">
+                                <form class=" registration-form">
+
+                                    <div class="registration-input-container">
+                                        <i class="fa fa-user registration-icon"></i>
+                                        <input class="registration-input-field from-control" type="text"
+                                            placeholder="Username" name="name">
+                                    </div>
+
+
+                                    <div class="registration-input-container">
+                                        <i class="fa fa-envelope registration-icon"></i>
+                                        <input class="registration-input-field from-control" type="email"
+                                            placeholder="Email" name="email">
+                                    </div>
+
+                                    <div class="registration-input-container">
+                                        <i class="fa fa-phone registration-icon"></i>
+                                        <input class="registration-input-field form-control" type="text"
+                                            placeholder="Phone number" name="phonenumber">
+                                    </div>
+
+                                    <div class="registration-input-container">
+                                        <i class="fa fa-key registration-icon"></i>
+                                        <input class="registration-input-field form-control" type="password"
+                                            placeholder="password" name="pass">
+                                    </div>
+                                    <button type="submit" class="registration-btn">Register</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="submit" class="google-btn w-100 btn-outline-danger">Login With Google</button>
+                            <P class="modal-p-signup">One of us ! <a href="#" data-bs-toggle="modal"
+                                    data-bs-target="#myModal1">Login</a></P>
+                        </div>
+
+                    </div>G
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- banner section -->
+
+
+    <section class="wrapper owl-carousel  owl-theme" id="home">
+        <div class="banner_background1">
+            <div class="banner_overlay">
+                <div class="container">
+                    <div class="row banner_content_row">
+                        <div class="col-10 col-md-10 m-auto mx-md-0">
+                            <div class="banner_content py-5">
+                                <h3>Growing with nature</h3>
+                                <h2>The pure natural healing</h2>
+                                <p>Growing community by inspiring healthy is our commitment
+                                    with farmers,<br /> the abundant living on the field</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner_background2">
+            <div class="banner_overlay">
+                <div class="container">
+                    <div class="row banner_content_row">
+                        <div class="col-10 col-md-10 m-auto mx-md-0">
+
+                            <div class="banner_content">
+                                <h3>Growing with nature</h3>
+                                <h2>The pure natural healing</h2>
+                                <p>Growing community by inspiring healthy is our commitment
+                                    with farmers, <br />the abundant living on the field</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner_background3">
+            <div class="banner_overlay">
+                <div class="container">
+                    <div class="row banner_content_row">
+                        <div class="col-10 col-md-10 m-auto mx-md-0">
+
+                            <div class="banner_content">
+                                <h3>Growing with nature</h3>
+                                <h2>The pure natural healing</h2>
+                                <p>Growing community by inspiring healthy is our commitment
+                                    with farmers,<br /> the abundant living on the field</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- new couser -->
+
+    <section class="course_section" id="course">
+        <div class="container-fluid">
+            <div class="row pt-4 pt-sm-0">
+                <!-- <h2 class="gallery_main_head m-0 text-center fw-bold">OUR COLLECTIONS</h2> -->
+                <h3 class="gallery_sub_head mb-md-5 py-5 pb-sm-0 mb-0 text-center">Upcoming courses </h3>
+            </div>
+            <div class="container">
+                <div class="row row-cols row-cols-md-3 g-4 mt-4">
+                    <div class="col-12 mx-auto col-sm-6 col-md-3">
+                        <div class="card h-100 card-design">
+                            <img src="images/g-3.jpg" class="card-img-top img-thumbnail" alt="..."
+                                style=" align-self: center;">
+                            <div class="card-body">
+                                <h5 class="card-title">NEW COURSE</h5>
+                                <p class="card-text">Starting Date : 01-03-022</p>
+                                <p class="card-text">Duration : 6 Weeks</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="text-light btn course-btn  w-100" aria-current="page"
+                                    data-bs-toggle="modal" data-bs-target="#myModal3">ENROLL NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mx-auto col-sm-6 col-md-3">
+                        <div class="card h-100 card-design">
+                            <img src="images/g-2.jpg" class="card-img-top img-thumbnail" alt="..."
+                                style=" align-self: center;">
+                            <div class="card-body">
+                                <h5 class="card-title">NEW COURSE</h5>
+                                <p class="card-text">Starting Date : 01-03-022</p>
+                                <p class="card-text">Duration : 6 Weeks</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="text-light btn course-btn  w-100" aria-current="page"
+                                    data-bs-toggle="modal" data-bs-target="#myModal3">ENROLL NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mx-auto col-sm-6 col-md-3">
+                        <div class="card h-100 card-design">
+                            <img src="images/g-4.jpg" class="card-img-top img-thumbnail" alt="..."
+                                style="align-self: center;">
+                            <div class="card-body">
+                                <h5 class="card-title">NEW COURSE</h5>
+                                <p class="card-text">Starting Date : 01-03-022</p>
+                                <p class="card-text">Duration : 6 Weeks</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="text-light btn course-btn  w-100" aria-current="page"
+                                    data-bs-toggle="modal" data-bs-target="#myModal3">ENROLL NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mx-auto col-sm-6 col-md-3">
+                        <div class="card h-100 card-design">
+                            <img src="images/g-5.jpg" class="card-img-top img-thumbnail" alt="..."
+                                style=" align-self: center;">
+                            <div class="card-body">
+                                <h5 class="card-title">NEW COURSE</h5>
+                                <p class="card-text">Starting Date : 01-03-022</p>
+                                <p class="card-text">Duration : 6 Weeks</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="text-light btn course-btn  w-100" aria-current="page"
+                                    data-bs-toggle="modal" data-bs-target="#myModal3">ENROLL NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="alert alert-success text-center mb-0 mb-md-2 alert-residental">
+                <strong>Residential, Pick-up, Drop Services is also Available.</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-------our courses---------->
+
+    <section class="course_section  pb-4" id="our_course">
+        <div class="container">
+            <div class="row">
+                <h3 class="gallery_sub_head  text-center">Our Courses</h3>
+            </div>
+            <div class="row  course-table py-4">
+                <div class="col-10 m-auto col-sm-6 col-md-4 col-lg-3">
+                    <div class="sub_course d-flex align-items-center">
+                        <div class="course_icon">
+                            <span><i class="fa fa-tree"></i></span>
+                        </div>
+                        <div class="course_title">
+
+                            <h3 class="m-0"> <a href="#" aria-current="page" data-bs-toggle="modal"
+                                    data-bs-target="#myModal3">(RWAE) Agriculture</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 m-auto col-sm-6 col-md-4 col-lg-3">
+                    <div class="sub_course d-flex align-items-center">
+                        <div class="course_icon">
+                            <span><i class="fa fa-forumbee"></i></span>
+                        </div>
+                        <div class="course_title">
+                            <h3 class="m-0"> <a href="#" aria-current="page" data-bs-toggle="modal"
+                                    data-bs-target="#myModal3">Apiculture (Bee Keeping)</a></h3>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 m-auto col-sm-6 col-md-4 col-lg-3">
+                    <div class="sub_course d-flex align-items-center">
+                        <div class="course_icon">
+                            <span><i class="fa fa-book"></i></span>
+                        </div>
+                        <div class="course_title">
+                            <h3 class="m-0"> <a href="#" aria-current="page" data-bs-toggle="modal"
+                                    data-bs-target="#myModal3">Mushroom Cultivation </a></h3>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 m-auto col-sm-6 col-md-4 col-lg-3">
+                    <div class="sub_course d-flex align-items-center">
+                        <div class="course_icon">
+                            <span><i class="fa fa-picture-o "></i></span>
+                        </div>
+                        <div class="course_title">
+                            <h3 class="m-0"> <a href="#" aria-current="page" data-bs-toggle="modal"
+                                    data-bs-target="#myModal3">Socioeconomic Survey </a></h3>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 m-auto col-sm-6 col-md-4 col-lg-3">
+                    <div class="sub_course d-flex align-items-center">
+                        <div class="course_icon">
+                            <span><i class="fa fa-leanpub"></i></span>
+                        </div>
+                        <div class="course_title">
+                            <h3 class="m-0"> <a href="#" aria-current="page" data-bs-toggle="modal"
+                                    data-bs-target="#myModal3">Nursery Raising </a></h3>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 m-auto col-sm-6 col-md-4 col-lg-3">
+                    <div class="sub_course d-flex align-items-center">
+                        <div class="course_icon">
+                            <span><i class="fa fa-apple"></i></span>
+                        </div>
+                        <div class="course_title">
+                            <h3 class="m-0"> <a href="#" aria-current="page" data-bs-toggle="modal"
+                                    data-bs-target="#myModal3">Food Processing </a></h3>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 m-auto col-sm-6 col-md-4 col-lg-3">
+                    <div class="sub_course d-flex align-items-center">
+                        <div class="course_icon">
+                            <span><i class="fa fa-linode"></i></span>
+                        </div>
+                        <div class="course_title">
+                            <h3 class="m-0"> <a href="#" aria-current="page" data-bs-toggle="modal"
+                                    data-bs-target="#myModal3">Dairy Farming </a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 m-auto col-sm-6 col-md-4 col-lg-3">
+                    <div class="sub_course d-flex align-items-center">
+                        <div class="course_icon">
+                            <span><i class="fa fa-leanpub"></i></span>
+                        </div>
+                        <div class="course_title">
+                            <h3 class="m-0"> <a href="#" aria-current="page" data-bs-toggle="modal"
+                                    data-bs-target="#myModal3">Vermicompost </a></h3>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 m-auto col-sm-6 col-md-4 col-lg-3">
+                    <div class="sub_course d-flex align-items-center">
+                        <div class="course_icon">
+                            <span><i class="fa fa-leanpub"></i></span>
+                        </div>
+                        <div class="course_title">
+                            <h3 class="m-0"> <a href="#" aria-current="page" data-bs-toggle="modal"
+                                    data-bs-target="#myModal3">Horticulture </a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 m-auto col-sm-6 col-md-4 col-lg-3">
+                    <div class="sub_course d-flex align-items-center">
+                        <div class="course_icon">
+                            <span><i class="fa fa-leaf"></i></span>
+                        </div>
+                        <div class="course_title">
+                            <h3 class="m-0"> <a href="#" aria-current="page" data-bs-toggle="modal"
+                                    data-bs-target="#myModal3">Plant Clinic </a></h3>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 m-auto col-sm-6 col-md-4 col-lg-3">
+                    <div class="sub_course d-flex align-items-center">
+                        <div class="course_icon">
+                            <span><i class="fa fa-tree"></i></span>
+                        </div>
+                        <div class="course_title">
+                            <h3 class="m-0"> <a href="#" aria-current="page" data-bs-toggle="modal"
+                                    data-bs-target="#myModal3">Forestry </a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 m-auto col-sm-6 col-md-4 col-lg-3">
+                    <div class="sub_course d-flex align-items-center">
+                        <div class="course_icon">
+                            <span><i class="fa fa-leanpub"></i></span>
+                        </div>
+                        <div class="course_title">
+                            <h3 class="m-0">Others Coming Soon....</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!------trained section-------------->
+
+    <section id="traine">
+        <div class="container traine-container">
+            <div class="row py-4">
+
+                <h3 class="gallery_sub_head mb-3 text-center">Collaborations with Institute</h3>
+            </div>
+            <div class="row py-5">
+                <div class="traine-main owl-carousel">
+                    <div class="traine-wrapper">
+                        <div class="traine-logo mb-2">
+                            <img src="images/exam1.png" class="img-fluid" />
+                        </div>
+                        <h2>College Name</h2>
+                    </div>
+                    <div class="traine-wrapper">
+                        <div class="traine-logo mb-2">
+                            <img src="images/exam3.png" class="img-fluid" />
+                        </div>
+                        <h2>College Name</h2>
+                    </div>
+                    <div class="traine-wrapper">
+                        <div class="traine-logo mb-2">
+                            <img src="images/exam3.png" class="img-fluid" />
+                        </div>
+                        <h2>College Name</h2>
+                    </div>
+                    <div class="traine-wrapper">
+                        <div class="traine-logo mb-2">
+                            <img src="images/exam3.png" class="img-fluid" />
+                        </div>
+                        <h2>College Name</h2>
+                    </div>
+                    <div class="traine-wrapper">
+                        <div class="traine-logo mb-2">
+                            <img src="images/exam3.png" class="img-fluid" />
+                        </div>
+                        <h2>College Name</h2>
+                    </div>
+                    <div class="traine-wrapper">
+                        <div class="traine-logo mb-2">
+                            <img src="images/exam3.png" class="img-fluid" />
+                        </div>
+                        <h2>College Name</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- gallery section -->
+
+    <section class="gallery" id="gallery">
+
+        <div class="container-fluid">
+            <div class="row">
+                <!-- <h2 class="gallery_main_head m-0 text-center fw-bold">OUR COLLECTIONS</h2> -->
+                <h3 class="gallery_sub_head mb-0 text-center">Gallery</h3>
+            </div>
+
+            <div class="row">
+                <div class="col-10 col-md-8 mx-auto">
+
+                    <ul class="nav nav-pills d-flex justify-content-center my-5" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link gallery-btn active" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all"
+                                aria-selected="true">All</button>
+                        </li>
+                        <li class="nav-item mx-3" role="presentation">
+                            <button class="nav-link gallery-btn " id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-fruits" type="button" role="tab" aria-controls="pills-fruits"
+                                aria-selected="false">Fruits</button>
+                        </li>
+                        <li class="nav-item mx-3" role="presentation">
+                            <button class="nav-link gallery-btn " id="pills-contact-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-cattle" type="button" role="tab" aria-controls="pills-cattle"
+                                aria-selected="false">Cattle</button>
+                        </li>
+                        <li class="nav-item mx-3" role="presentation">
+                            <button class="nav-link gallery-btn " id="pills-contact-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-farms" type="button" role="tab" aria-controls="pills-farms"
+                                aria-selected="false">Farms</button>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="row mx-0 mx-md-3 ">
+                <div class="col-12 tab-content " id="pills-tabContent">
+                    <div class="col-12 tab-pane fade show active" id="pills-all" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+
+                        <div class="row mb-sm-4">
+                            <div class="col-6 col-sm-3 filter pb-4 pb-sm-0">
+                                <img src=" images/plant-11.jpg" class="img-fluid tab-img " alt="item1" />
+                            </div>
+                            <div class="col-3 col-6 col-sm-3 filter">
+                                <img src="images/plant-6.jpg" class="img-fluid tab-img" alt="item2" />
+                            </div>
+                            <div class="col-3 col-6 col-sm-3 filter pb-4 pb-sm-0">
+                                <img src="images/plant-5.jpg" class="img-fluid tab-img" alt="item3" />
+                            </div>
+                            <div class="col-3 col-6 col-sm-3 filter">
+                                <img src="images/plant-8.jpg" class="img-fluid  tab-img" alt="item4" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 col-sm-3 filter pb-4 pb-sm-0">
+                                <img src=" images/plant-5.jpg" class="img-fluid tab-img " alt="item1" />
+                            </div>
+                            <div class="col-6 col-sm-3 filter">
+                                <img src="images/plant-8.jpg" class="img-fluid  tab-img" alt="item2" />
+                            </div>
+                            <div class="col-6 col-sm-3 filter">
+                                <img src="images/plant-6.jpg" class="img-fluid  tab-img" alt="item3" />
+                            </div>
+                            <div class="col-6 col-sm-3 filter">
+                                <img src="images/plant-11.jpg" class="img-fluid  tab-img" alt="item4" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-fruits" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="row">
+                            <div class="col-6 col-sm-3 filter">
+                                <img src=" images/g-1.jpg" class="img-fluid tab-img " alt="item1" />
+                            </div>
+                            <div class="col-6 col-sm-3 filter">
+                                <img src="images/g-2.jpg" class="img-fluid  tab-img" alt="item2" />
+                            </div>
+                            <div class="col-6 col-sm-3 filter">
+                                <img src="images/g-3.jpg" class="img-fluid  tab-img" alt="item3" />
+                            </div>
+                            <div class="col-6 col-sm-3 filter">
+                                <img src="images/g-4.jpg" class="img-fluid  tab-img" alt="item4" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-cattle" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <div class="row">
+                            <div class="col-6 col-sm-3 filter">
+                                <img src=" images/g-1.jpg" class="img-fluid tab-img " alt="item1" />
+                            </div>
+                            <div class="col-6 col-sm-3">
+                                <img src="images/g-2.jpg" class="img-fluid  tab-img" alt="item2" />
+                            </div>
+                            <div class="col-3 filter">
+                                <img src="images/g-3.jpg" class="img-fluid  tab-img" alt="item3" />
+                            </div>
+                            <div class="col-6 col-sm-3 filter">
+                                <img src="images/g-4.jpg" class="img-fluid tab-img" alt="item4" />
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="pills-farms" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <div class="row">
+                            <div class="col-6 col-sm-3 filter">
+                                <img src=" images/g-1.jpg" class="img-fluid tab-img " alt="item1" />
+                            </div>
+
+                            <div class="col-6 col-sm-3 filter">
+                                <img src="images/g-3.jpg" class="img-fluid  tab-img" alt="item3" />
+                            </div>
+                            <div class="col-6 col-sm-3 filter">
+                                <img src="images/g-4.jpg" class="img-fluid  tab-img" alt="item4" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- service section -->
+
+    <section class="service" id="service">
+        <div class="container-fluid"  >
+            <div class="row">
+                <h3 class="gallery_sub_head mb-0 text-center">Our services</h3>
+            </div>
+            <div class="container">
+                <div class="row row-cols row-cols-md-3 g-4 mt-4">
+                    <div class="col-10 mx-auto col-sm-6 col-md-3">
+                        <div class="card h-100 card-design">
+                            <img src="images/live-video2.png" class="card-img-top" alt="..."
+                                style=" align-self: center;">
+                            <div class="card-body">
+                                <h5 class="card-title">Exchange Program</h5>
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Tempore, illo. Eum optio
+                                    accusantium ullam voluptatibus ea deleniti unde debitis animi.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="live-video.html" class="text-light btn course-btn w-100">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 mx-auto col-sm-6 col-md-3">
+                        <div class="card h-100 card-design">
+                            <img src="images/recorded-video.png" class="card-img-top" alt="..."
+                                style=" align-self: center;">
+                            <div class="card-body">
+                                <h5 class="card-title">Agriculture Learning & Exposure Center</h5>
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Tempore, illo. Eum optio
+                                    accusantium ullam voluptatibus ea deleniti unde debitis animi.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="recorded-video.html" class="text-light btn course-btn  w-100">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 mx-auto col-sm-6 col-md-3">
+                        <div class="card h-100 card-design">
+                            <img src="images/test-serice.png" class="card-img-top" alt="..."
+                                style="align-self: center;">
+                            <div class="card-body">
+                                <h5 class="card-title">Peer Group Learning</h5>
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Tempore, illo. Eum optio
+                                    accusantium ullam voluptatibus ea deleniti unde debitis animi.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="Test-series.html" class="text-light btn course-btn w-100">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 mx-auto col-sm-6 col-md-3">
+                        <div class="card h-100 card-design">
+                            <img src="images/material.png" class="card-img-top" alt="..." style=" align-self: center;">
+                            <div class="card-body">
+                                <h5 class="card-title">DIY (Do It Yourself) Space</h5>
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Tempore, illo. Eum optio
+                                    accusantium ullam voluptatibus ea deleniti unde debitis animi.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="" class="text-light btn course-btn  w-100">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+    </section>
+
+    <!-- Achievements -->
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <h3 class="about_sub_h text-center ">Our Achievements</h3>
+            </div>
+            <div class="row mb-4 ">
+
+                <div class="col-md-3 col-sm-6  bottom-margin text-center counter-section wow fadeInUp sm-margin-bottom-ten animated"
+                    data-wow-duration="300ms"
+                    style="visibility: visible; animation-duration: 300ms; animation-name: fadeInUp;  padding-top: 30px;">
+                    <div class="achive-icon">
+                        <i class="fa fa-institution"></i>
+                    </div>
+                    <span id="anim-number-pizza" class="counter-number"></span>
+                    <span class="timer counter alt-font appear" data-to="980" data-speed="7000">16</span>
+                    <p class="counter-title">Research Space (Acre+)</p>
+                </div>
+
+                <div class="col-md-3 col-sm-6 pb-2 pb-sm-0 bottom-margin text-center counter-section wow fadeInUp sm-margin-bottom-ten animated"
+                    data-wow-duration="600ms"
+                    style="visibility: visible; animation-duration: 600ms; animation-name: fadeInUp;     padding-top: 30px;">
+                    <div class="achive-icon">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <span class="timer counter alt-font appear" data-to="980" data-speed="7000">50</span> <span
+                        class="counter-title">institute training (+)</span>
+                </div>
+
+                <div class="col-md-3 col-sm-6 pb-2 pb-sm-0 bottom-margin-small text-center counter-section wow fadeInUp xs-margin-bottom-ten animated"
+                    data-wow-duration="900ms"
+                    style="visibility: visible; animation-duration: 900ms; animation-name: fadeInUp;     padding-top: 30px;">
+                    <div class="achive-icon">
+                        <i class="fa fa-trophy"></i>
+                    </div>
+                    <span class="timer counter alt-font appear" data-to="810" data-speed="7000">4.8</span> <span
+                        class="counter-title">Rating (4.8)</span>
+                </div>
+
+                <div class="col-md-3 col-sm-6 pb-2 pb-sm-0 text-center counter-section wow fadeInUp animated"
+                    data-wow-duration="1200ms"
+                    style="visibility: visible; animation-duration: 1200ms; animation-name: fadeInUp;     padding-top: 30px;">
+                    <div class="achive-icon">
+                        <i class="fa fa-user"></i>
+                    </div>
+                    <span class="timer counter alt-font appear" data-to="600" data-speed="7000">10000</span> <span
+                        class="counter-title">Students trained (+)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+
+    <!-- TESTIMONIAL  -->
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="row">
+                <!-- <h2 class="about_main_h text-center">TO KNOW MORE</h2> -->
+                <h3 class="about_sub_h mt-3 text-center">Students Testimonials</h3>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div id="student-testimonial" class="owl-carousel">
+
+                        <!--TESTIMONIAL 1 -->
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="img-circle" src="images/khush.png" alt="">
+
+                                <p>Practically learned things are remembered for the long time and lil farm provide good
+                                    practical space... Every component (apicultute, hydropnics, poultry, mushroom
+                                    cultivation, goatry, food processing etc.) can be learned here...... Nice and
+                                    informative experience....</p>
+                            </div>
+                            <div class="testimonial-name">Jyoti Kumari</div>
+                        </div>
+                        <!--END OF TESTIMONIAL 1 -->
+                        <!--TESTIMONIAL 2 -->
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="img-circle" src="images/rahul.png" alt="">
+                                <p>Nice place! Learning in a very healthy and friendly environment. a well
+                                    infrastructure with large campus in all over dehradun, u can easily explore ur
+                                    knowledge with best experience at that place....Really love this place....❣️❣️</p>
+                            </div>
+                            <div class="testimonial-name">Anurag Shandilya</div>
+                        </div>
+                        <!--END OF TESTIMONIAL 2 -->
+                        <!--TESTIMONIAL 3 -->
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="img-circle" src="images/shivani-parmar.png" alt="">
+                                <p>This is one of the best platform for the students who wants to enhance their
+                                    practical skills in agriculture sector.
+                                    Through this training, I personally came to know about various allied activities
+                                    related to agriculture. 🙏🙏🙏 Thanks ( Lil farm ) for the efforts and quality
+                                    knowledge.</p>
+                            </div>
+                            <div class="testimonial-name">Shivani Parmar</div>
+                        </div>
+                        <!--END OF TESTIMONIAL 3 -->
+                        <!--TESTIMONIAL 4 -->
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="img-circle" src="images/amita.png" alt="">
+                                <p>Lil farm is a training institute which provides training in different components.. My
+                                    experience in lil farm was good. We have done training in two components i.e.organic
+                                    farming and food processing.The teachers focus on both lectures and practicals and
+                                    they are also time oriented.They provide best to their students to learn any skill.
+                                    The money you invest in lil farm for training is worth..you should atleast visit
+                                    once.</p>
+                            </div>
+                            <div class="testimonial-name">amita Chand</div>
+                        </div>
+                        <!--END OF TESTIMONIAL 4 -->
+                        <!--TESTIMONIAL 5 -->
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="img-circle" src="images/ayush.png" alt="">
+                                <p>This is very nice place for agricultural training I have visited with my batchmate in
+                                    November .a well infrastructure with large campus in all over Dehradun ,one can
+                                    easily explore his/her knowledge with best experience at that place I strongly with
+                                    faithful recomended to visit again .</p>
+                            </div>
+                            <div class="testimonial-name">Ayush Anand</div>
+                        </div>
+                        <!--END OF TESTIMONIAL 5 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section -->
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <h2 class=" text-center  about-main-head">About Us</h2>
+            </div>
+            <div class="row ">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nemo natus omnis magnam velit
+                    officiis, hic dicta nostrum rerum, quo tempore nisi. Dignissimos maiores, minus exercitationem
+                    molestias aliquid dicta nostrum facere eaque veritatis non necessitatibus, fugiat natus perferendis
+                    obcaecati sint labore dolores! Sunt illum optio libero molestiae dolore. Nihil ipsa, autem harum
+                    aliquid minus perferendis ex temporibus excepturi blanditiis, unde cupiditate magnam quibusdam
+                    voluptates eum vitae eligendi, ut voluptate molestiae delectus neque. Molestias veritatis cupiditate
+                    nisi deleniti distinctio voluptatibus, <span id="dots">...</span><span id="more">aspernatur
+                        tenetur ipsum quam eligendi! Culpa atque ullam,
+                        porro eligendi cum inventore nostrum veniam, temporibus illo sapiente, error ipsa? Similique
+                        iure
+                        reiciendis libero perferendis magni, ullam omnis tempore, quisquam doloremque ipsam eum sed
+                        illum
+                        sit provident dolor eius! Delectus officiis neque molestias tenetur laboriosam cum quis, commodi
+                        similique asperiores dolore eveniet eius quae fugit ex aspernatur inventore! Perferendis nam
+                        perspiciatis blanditiis nisi aspernatur deleniti distinctio minus amet necessitatibus, libero
+                        ipsum
+                        quos tenetur sunt quia laboriosam, reiciendis facilis earum modi iusto quod explicabo! Totam
+                        consequuntur odio consequatur odit eligendi, quibusdam, harum esse ratione sit, exercitationem
+                        libero enim. Illum tempora, cupiditate recusandae eligendi eum consectetur asperiores distinctio
+                        natus non repellendus voluptates officiis suscipit aliquid mollitia! Temporibus magni minima
+                        sapiente, reprehenderit aliquam ratione culpa.</span> <a onclick="myFunction()" id="myBtn"
+                        class="text-info">Read more</a></p>
+
+                </h3>
+            </div>
+            <div class="row quote-box">
+                <div class="col-4">
+                    <div class="blockquote-img">
+                        <img src="images/profile1.svg" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-8 col-md-8">
+                    <blockquote>
+                        <p class="quotation-mark">
+                            “
+                        </p>
+                        <p class="quote-text">
+                            Don't believe anything that you read on the internet, it may be fake Don't believe anything
+                            that you read on the internet, it may be fake Don't believe anything that you read on the
+                            internet, it may be fake.
+                        </p>
+                        <hr>
+                        <div class="blog-post-actions">
+                            <p class="blog-post-bottom pull-left">
+                                Abraham Lincoln
+                            </p>
+                            <p class="blog-post-bottom pull-right">
+                                <span class="badge quote-badge">743</span>  ❤
+                            </p>
+                        </div>
+                    </blockquote>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- our team -->
+
+    <section id="faculty">
+        <div class="container">
+            <div class="row">
+                <h3 class="gallery_sub_head mb-5 text-center">Teachers</h3>
+            </div>
+            <div class="row">
+                <div class="faculty-wrapper owl-carousel">
+                    <div class="first">
+                        <div class="faculty">
+                            <div class="faculty-img p-4">
+                                <img src="./images/f3.webp" class="img-fluid">
+                            </div>
+                            <div class="faculty-title py-3 text-center">
+                                <div
+                                    class="faculty-social position-absolute d-flex justify-content-around align-items-center">
+                                    <a href="#" class="faculty-icon"><i class="fa fa-facebook-f"></i></a>
+                                    <a href="#" class="faculty-icon"><i class="fa fa-linkedin-square"></i></a>
+                                    <a href="#" class="faculty-icon"><i class="fa fa-instagram"></i></a>
+                                </div>
+                                <div class="f-sub-title">
+                                    <h3 class="f-name mb-0">pradeep Rawat</h3>
+                                    <h4 class="f-position">Marketing Manager</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="first">
+                        <div class="faculty">
+                            <div class="faculty-img p-4">
+                                <img src="./images/f2.webp" class="img-fluid">
+                            </div>
+                            <div class="faculty-title py-3 text-center">
+                                <div
+                                    class="faculty-social position-absolute d-flex justify-content-around align-items-center">
+                                    <a href="#" class="faculty-icon"><i class="fa fa-facebook-f"></i></a>
+                                    <a href="#" class="faculty-icon"><i class="fa fa-linkedin-square"></i></a>
+                                    <a href="#" class="faculty-icon"><i class="fa fa-instagram"></i></a>
+                                </div>
+                                <div class="f-sub-title">
+                                    <h3 class="f-name mb-0">pradeep Rawat</h3>
+                                    <h4 class="f-position">Marketing Manager</h4>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="first">
+                        <div class="faculty">
+                            <div class="faculty-img p-4">
+                                <img src="./images/f3.webp" class="img-fluid">
+                            </div>
+                            <div class="faculty-title py-3 text-center">
+                                <div
+                                    class="faculty-social position-absolute d-flex justify-content-around align-items-center">
+                                    <a href="#" class="faculty-icon"><i class="fa fa-facebook-f"></i></a>
+                                    <a href="#" class="faculty-icon"><i class="fa fa-linkedin-square"></i></a>
+                                    <a href="#" class="faculty-icon"><i class="fa fa-instagram"></i></a>
+                                </div>
+                                <div class="f-sub-title">
+                                    <h3 class="f-name mb-0">pradeep Rawat</h3>
+                                    <h4 class="f-position">Marketing Manager</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="first">
+                        <div class="faculty">
+                            <div class="faculty-img p-4">
+                                <img src="./images/f2.webp" class="img-fluid">
+                            </div>
+                            <div class="faculty-title py-3 text-center">
+                                <div
+                                    class="faculty-social position-absolute d-flex justify-content-around align-items-center">
+                                    <a href="#" class="faculty-icon"><i class="fa fa-facebook-f"></i></a>
+                                    <a href="#" class="faculty-icon"><i class="fa fa-linkedin-square"></i></a>
+                                    <a href="#" class="faculty-icon"><i class="fa fa-instagram"></i></a>
+                                </div>
+                                <div class="f-sub-title">
+                                    <h3 class="f-name mb-0">pradeep Rawat</h3>
+                                    <h4 class="f-position">Marketing Manager</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="first">
+                        <div class="faculty">
+                            <div class="faculty-img p-4">
+                                <img src="./images/f3.webp" class="img-fluid">
+                            </div>
+                            <div class="faculty-title py-3 text-center">
+                                <div
+                                    class="faculty-social position-absolute d-flex justify-content-around align-items-center">
+                                    <a href="#" class="faculty-icon"><i class="fa fa-facebook-f"></i></a>
+                                    <a href="#" class="faculty-icon"><i class="fa fa-linkedin-square"></i></a>
+                                    <a href="#" class="faculty-icon"><i class="fa fa-instagram"></i></a>
+                                </div>
+                                <div class="f-sub-title">
+                                    <h3 class="f-name mb-0">pradeep Rawat</h3>
+                                    <h4 class="f-position">Marketing Manager</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="first">
+                        <div class="faculty">
+                            <div class="faculty-img p-4">
+                                <img src="./images/f.webp" class="img-fluid">
+                            </div>
+                            <div class="faculty-title py-3 text-center">
+                                <div
+                                    class="faculty-social position-absolute d-flex justify-content-around align-items-center">
+                                    <a href="#" class="faculty-icon"><i class="fa fa-facebook-f"></i></a>
+                                    <a href="#" class="faculty-icon"><i class="fa fa-linkedin-square"></i></a>
+                                    <a href="#" class="faculty-icon"><i class="fa fa-instagram"></i></a>
+                                </div>
+                                <div class="f-sub-title">
+                                    <h3 class="f-name mb-0">pradeep Rawat</h3>
+                                    <h4 class="f-position">Marketing Manager</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section -->
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <!-- <h2 class="about_main_h text-center">GET IN TOUCH WITH US</h2> -->
+                <h3 class="about_sub_h text-center mb-0 mb-md-3">Contact Us</h3>
+            </div>
+            <div class="row" style="margin-top:40px;">
+                <div class="col-12 col-md-6">
+                    <h4 class="pb-4 ps-1 contact_head m-0 ">CONTACT INFORMATION</h4>
+                    <form class="contact_form">
+                        <div class="row pb-4">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Enter Your Name">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Enter Your Name">
+                            </div>
+                        </div>
+                        <div class="row pb-4">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Your Subject">
+                            </div>
+                        </div>
+                        <div class="row pb-4">
+                            <div class="col">
+                                <textarea class="form-control" id="exampleFormControlTextarea1"
+                                    placeholder="Your Message" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <button class=" btn btn-danger">Send Message</button>
+                    </form>
+                </div> 
+                <div class="col-12 col-md-6 order-first order-md-last pb-5 pb-md-0">
+                  <img src="images/contect-us.svg" alt="" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="row mt-5 mx-auto" >
+                <div class="col-12 col-md-7 ">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3442.6625354109838!2d77.89540951509679!3d30.360539281768418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f2b6d3304ba65%3A0xba53ce71fefe9e83!2sLil%20Farm%20(Learning%20Integrated%20Livelihood%20Forestry%20Agronomy%20%26%20Rural%20Management)!5e0!3m2!1sen!2sin!4v1644469267882!5m2!1sen!2sin"
+                        width="100%" height="450" style="border: 2px solid #046277;" allowfullscreen=""
+                        loading="lazy"></iframe>
+                </div>
+                <div class="col-12 col-md-5">
+                    <iframe
+                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Flilfarmdhoolkot%2F&tabs=timeline&width=768&height=450&small_header=false&adapt_container_width=true&hide_cover=true&show_facepile=true&appId"
+                        width="100%" height="450px" style="border: 2px solid #046277; padding: inherit;"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer section -->
+
+    <footer class="footer">
+        <div class="container">
+            <hr class="footer_divider mb-5" />
+            <div class="row pb-3">
+                <div class="col-10 mx-auto col-sm-6 col-md-3 col-lg-3">
+                    <div class="footer_about pb-4 pb-md-0">
+                        <img src="images/logo.png" class="img-fluid pb-4" style="width: 150px;">
+                        <p class="footer_a_text text-white">Lorem ipsum dolor sit amet, consecte stare adipiscing elit.
+                            In act honcus risus atiner Pellentesque risus.</p>
+                        <div class="footer_contact">
+                            <div class="footer_pin pb-1">
+                                <a href="#"><i class="fa fa-map-pin" aria-hidden="true"></i></a>
+
+                            </div>
+                            <div class="footer_envelope pb-1">
+                                <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>lilfarmdhoolkot@gmal.com
+                                </a>
+
+                            </div>
+                            <div class="footer_phone pb-1">
+                                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>+91 9917092149 | +91
+                                    8057753433</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 mx-auto col-sm-6 col-md-3 col-lg-3 pb-4 pb-sm-0">
+                    <h4 class="footer_common_head text-start text-sm-center">Links</h4>
+                    <div class="footer_links text-start text-sm-center py-2">
+                        <div class="footer_common_link">
+
+                            <a href="#Home" class="text-white">Home</a>
+                        </div>
+                        <div class="footer_common_link">
+                            <a href="#Service" class="text-white"> Service</a>
+                        </div>
+                        <div class="footer_common_link">
+                            <a href="#Gallery" class="text-white">Gallery</a>
+                        </div>
+                        <div class="footer_common_link">
+                            <a href="#About" class="text-white">About</a>
+                        </div>
+                        <div class="footer_common_link">
+                            <a href="#Contact" class="text-white">Contact Us</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-10 mx-auto col-sm-6 col-md-3 col-lg-3 pb-4 pb-sm-0">
+                    <h4 class="footer_common_head text-start text-sm-center ">Services</h4>
+                    <div class="footer_links text-start text-sm-center py-2">
+                        <div class="footer_common_link">
+
+                            <a href="" class="text-white" 0>Agriculture Learning & Exposure Center</a>
+                        </div>
+                        <div class="footer_common_link">
+                            <a href="" class="text-white"> Peer Group Learning</a>
+                        </div>
+                        <div class="footer_common_link">
+                            <a href="" class="text-white">Exchange Program</a>
+                        </div>
+
+                        <div class="footer_common_link">
+                            <a href="" class="text-white">DIY (Do It Yourself) Space</a>
+                        </div>
+                        <div class="footer_common_link">
+                            <a href="" class="text-white">Agro Tourism</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-10 mx-auto col-sm-6 col-md-3 col-lg-3">
+                    <h4 class="footer_common_head text-start text-sm-center pb-3">Stay Connected</h4>
+                    <div class="footer_social text-start text-sm-center">
+                        <a href="#"><span><i class="fa fa-facebook"></i></span></a>
+                        <a href="#"><span><i class="fa fa-whatsapp"></i></span></a>
+                        <a href="#"><span><i class="fa fa-instagram"></i></span></a>
+                        <a href="#"><span><i class="fa fa-linkedin"></i></span></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer_divider mb-5" />
+            <div class="row">
+                <p class="copyright_text text-center text-white"> Copyright &copy; 2022 Alright reserved
+                    by Lil' Farm.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- apply modal  -->
+
+    <section>
+        <div class="modal fade" id="myModal3">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content modal-design">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header text-center">
+                        <h4 class="modal-title w-100">Enrollment Form</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+
+                    <div class="modal-body">
+                        <div class="container">
+                            <form class=" registration-form">
+
+                                <div class="registration-input-container">
+                                    <i class="fa fa-user registration-icon"></i>
+                                    <input class="registration-input-field from-control" type="text"
+                                        placeholder="Username" name="name">
+                                </div>
+
+                                <div class="registration-input-container">
+                                    <i class="fa fa-institution registration-icon"></i>
+                                    <input class="registration-input-field from-control" type="text"
+                                        placeholder="Institute Name" name="name">
+                                </div>
+
+
+                                <div class="registration-input-container">
+                                    <i class="fa fa-envelope registration-icon"></i>
+                                    <input class="registration-input-field from-control" type="email"
+                                        placeholder="Email" name="email">
+                                </div>
+
+                                <div class="registration-input-container">
+                                    <i class="fa fa-phone registration-icon"></i>
+                                    <input class="registration-input-field form-control" type="text"
+                                        placeholder="Phone number" name="phonenumber">
+                                </div>
+
+                                <div class="registration-input-container">
+                                    <i class="fa fa-list registration-icon"></i>
+                                    <label for="inputState"></label>
+                                    <select id="inputState" class="form-control registration-input-field">
+                                        <option selected>Select Your intrusted course</option>
+                                        <option> (RWAE) Agriculture</option>
+                                        <option> Apiculture (Bee Keeping) </option>
+                                        <option> Mushroom Cultivation </option>
+                                        <option> Socioeconomic Survey </option>
+                                        <option> Nursery Raising </option>
+                                        <option> Food Processing </option>
+                                        <option> Dairy Farming </option>
+                                        <option> Vermicompost </option>
+                                        <option> Horticulture</option>
+                                        <option> Plant Clinic </option>
+                                        <option> Forestry </option>
+                                        <option></option>
+                                    </select>
+                                </div>
+
+                                <div class="registration-input-container">
+                                    <i class="fa fa-clock-o registration-icon"></i>
+                                    <label for="inputState"></label>
+                                    <select id="inputState" class="form-control registration-input-field">
+                                        <option selected>Select Duration</option>
+                                        <option>ONE Month</option>
+                                        <option>Two Month</option>
+                                        <option>Three Month</option>
+                                        <option>Six Month</option>
+                                    </select>
+                                </div>
+
+                                <div class="registration-input-container text">
+                                    <p class="text-info p-2">Do you want to Avail the bus service : </p>
+                                    <input type="radio" id="YES" name="fav_language" value="YES" class="redio-btn">
+                                    <label for="yes" class="text-dark p-2">YES</label><br>
+                                    <input type="radio" id="NO" name="fav_language" value="NO" class="redio-btn">
+                                    <label for="no" class="text-dark p-2">NO</label><br>
+                                </div>
+
+
+
+                                <button type="submit" class="registration-btn">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div>
+                        <P class="text-dark apply-now-modal"><span class="text-danger"> NOTE : </span>
+                            Our Team Will Contact You Within 12 Hours.. </P>
+                    </div>
+
+                </div>G
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- carousel js link   -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/owl.carousel.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/custom.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
+
+
+</body>
+
+</html>
